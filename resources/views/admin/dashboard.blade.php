@@ -7,10 +7,10 @@
 
     <!-- Start Content -->
 
-    <!-- Chart cards (Four columns grid) -->
+   
     <div class="grid grid-cols-1 gap-6 mt-6 md:grid-cols-2 lg:grid-cols-4">
-      <!-- Users chart card -->
-      <a href="#" class="p-4 transition-shadow border rounded-lg shadow-sm hover:shadow-lg bg-white">
+      <!-- Genre-->
+      <a href="{{route('genre')}}" class="p-4 transition-shadow border rounded-lg shadow-sm hover:shadow-lg bg-white">
         <div class="flex items-start">
           <div class="flex flex-col flex-shrink-0 space-y-2">
             <span class="text-gray-800">Genre</span>
@@ -26,8 +26,8 @@
         </div>
       </a>
 
-      <!-- Upcoming Event chart card -->
-      <a href="#" class="p-4 bg-white transition-shadow border rounded-lg shadow-sm hover:shadow-lg">
+      <!-- Artist -->
+      <a href="{{route('artist')}}" class="p-4 bg-white transition-shadow border rounded-lg shadow-sm hover:shadow-lg">
         <div class="flex items-start">
           <div class="flex flex-col flex-shrink-0 space-y-2">
             <span class="text-gray-800">Artist</span>
@@ -43,8 +43,8 @@
         </div>
       </a>
 
-      <!-- Volunteer card -->
-      <a href="#" class="p-4 bg-white transition-shadow border rounded-lg shadow-sm hover:shadow-lg">
+      <!-- Venue -->
+      <a href="{{route('venue')}}" class="p-4 bg-white transition-shadow border rounded-lg shadow-sm hover:shadow-lg">
         <div class="flex items-start">
           <div class="flex flex-col flex-shrink-0 space-y-2">
             <span class="text-gray-800">Venue</span>
@@ -60,8 +60,8 @@
         </div>
       </a>
 
-      <!-- Internship card -->
-      <a href="#" class="p-4 transition-shadow border rounded-lg shadow-sm hover:shadow-lg bg-white">
+      <!-- Events -->
+      <a href="{{route('event')}}" class="p-4 transition-shadow border rounded-lg shadow-sm hover:shadow-lg bg-white">
         <div class="flex items-start">
           <div class="flex flex-col flex-shrink-0 space-y-2">
             <span class="text-gray-800">Events</span>
