@@ -28,7 +28,11 @@
 
             <!-- Page Content -->
             <main>
-                {{ $slot }}
+            <x-dashheader />
+        <div class="overflow-hidden overflow-y-scroll bg-gray-100 min-h-screen">
+            {{ $slot }}
+
+        </div>
             </main>
         </div>
     </body>

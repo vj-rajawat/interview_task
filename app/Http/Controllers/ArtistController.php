@@ -8,6 +8,6 @@ class ArtistController extends Controller
 {
     public function index()
     {
-        return ('Artist table');
+        return view('admin.artist');
     }
 }

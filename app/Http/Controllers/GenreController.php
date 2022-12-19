@@ -8,6 +8,6 @@ class GenreController extends Controller
 {
     public function index()
     {
-        return ('Genre Name');
+        return view('admin.genre');
     }
 }
