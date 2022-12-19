@@ -8,6 +8,11 @@ class GenreController extends Controller
 {
     public function index()
     {
-        return view('admin.genre');
+        return view('admin.genre.index');
     }
+
+    public function create()
+{
+    return view('admin.genre.create');
+}
 }

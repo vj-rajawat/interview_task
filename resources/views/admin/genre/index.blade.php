@@ -10,8 +10,8 @@
 </head>
 
 <body>
-    <h1> Artist </h1>
-    <button type="button" class="btn btn-info">Add artist</button>
+    <h1> Genre </h1>
+    <a type="button"  href="{{route('genre.create')}}" class="btn btn-info">Add Genre</a>
     <table class="table">
         <thead>
             <tr>

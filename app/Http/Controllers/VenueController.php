@@ -8,6 +8,11 @@ class VenueController extends Controller
 {
     public function index()
     {
-        return view('admin.venue');
+        return view('admin.venue.index');
+    }
+
+    public function create()
+    {
+        return view('admin.venue.create');
     }
 }

@@ -7,19 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
 </head>
 
 <body>
-    <h1> Venue </h1>
-    <button type="button" class="btn btn-info">Add venue</button>
+    <h1> Artist </h1>
+    <a type="button"  href="{{route('artist.create')}}" class="btn btn-info">Add Artist</a>
     <table class="table">
         <thead>
             <tr>
                 <th scope="col">#</th>
                 <th scope="col">Name</th>
-                <th scope="col">Address</th>
-                <th scope="col">Contact No.</th>
                 <th scope="col">Edit</th>
                 <th scope="col">Delete</th>
             </tr>
@@ -27,8 +24,6 @@
         <tbody>
             <tr>
                 <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Mark</td>
                 <td>Mark</td>
                 <td><button type="button" class="btn btn-primary">Edit</button></td>
                 <td><button type="button" class="btn btn-danger">Delete</button></td>

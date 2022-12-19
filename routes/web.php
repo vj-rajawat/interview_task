@@ -27,8 +27,14 @@ Route::middleware(['auth', 'verified'])->group(function () {
         return view('admin.dashboard');
     })->name('dashboard');
     Route::get('/genre', [GenreController::class, 'index'])->name('genre');
+    Route::get('/genre/create', [GenreController::class, 'create'])->name('genre.create');
+
     Route::get('/artist', [ArtistController::class, 'index'])->name('artist');
+    Route::get('/artist/create', [ArtistController::class, 'create'])->name('artist.create');
+
     Route::get('/venue', [VenueController::class, 'index'])->name('venue');
+    Route::get('/venue/create', [VenueController::class, 'create'])->name('venue.create');
+
     Route::get('/event', [EventController::class, 'index'])->name('event');
 });
 
