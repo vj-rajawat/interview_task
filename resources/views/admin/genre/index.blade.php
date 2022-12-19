@@ -11,7 +11,7 @@
 
 <body>
     <h1> Genre </h1>
-    <a type="button"  href="{{route('genre.create')}}" class="btn btn-info">Add Genre</a>
+    <a type="button" href="{{route('genre.create')}}" class="btn btn-info">Add Genre</a>
     <table class="table">
         <thead>
             <tr>
@@ -22,13 +22,14 @@
             </tr>
         </thead>
         <tbody>
+            @foreach($genre as $item)
             <tr>
                 <th scope="row">1</th>
-                <td>Mark</td>
-                <td><button type="button" class="btn btn-primary">Edit</button></td>
-                <td><button type="button" class="btn btn-danger">Delete</button></td>
+                <td>{{$item->name}}</td>
+                <td><a type="button" href="{{ route('genre.edit',$item->id) }}" class="btn btn-primary">Edit</a></td>
+                <td><a type="button" href="{{ route('genre.delete',$item->id) }}" class="btn btn-danger">Delete</a></td>
             </tr>
-            <tr>
+            @endforeach
         </tbody>
     </table>
 </body>

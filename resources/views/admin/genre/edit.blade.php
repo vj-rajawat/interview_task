@@ -9,11 +9,13 @@
 
 </head>
 <body>
-<form>
-   <h1> Update Artist </h1>
+
+<form method="POST" action="{{route('genre.update',$genre->id)}}">
+  @csrf
+   <h1> Update Genre </h1>
    <div class="mb-3">
      <label for="exampleFormControlInput1" class="form-label">Name</label>
-     <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+     <input type="text" name="name" value="{{$genre->name}}" class="form-control" id="exampleFormControlInput1" placeholder="Enter update name">
    </div>
    <button type="submit" class="btn btn-secondary">Submit</button>
  </form>
